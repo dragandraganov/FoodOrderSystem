@@ -11,9 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{6A14D6A8-73D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderSystem.Common", "FoodOrderSystem.Common\FoodOrderSystem.Common.csproj", "{2930DB70-B7B5-44FB-BE9E-126BF257AD8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderSystem.Data", "FoodOrderSystem.Data\FoodOrderSystem.Data.csproj", "{85A82EFF-4721-4641-98FF-EBE2D9F663D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderSystem.Data", "Data\FoodOrderSystem.Data\FoodOrderSystem.Data.csproj", "{85A82EFF-4721-4641-98FF-EBE2D9F663D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderSystem.Data.Models", "FoodOrderSystem.Data.Models\FoodOrderSystem.Data.Models.csproj", "{418E7478-2B7B-4F9B-B4E2-9F8E9574493D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderSystem.Data.Models", "Data\FoodOrderSystem.Data.Models\FoodOrderSystem.Data.Models.csproj", "{418E7478-2B7B-4F9B-B4E2-9F8E9574493D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2CEF59DE-8912-4FA4-A4F8-E62895EDE8CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderSystem.Web", "Web\FoodOrderSystem.Web\FoodOrderSystem.Web.csproj", "{913D7AC0-1958-46FB-A27B-6BE4DCFD081A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{418E7478-2B7B-4F9B-B4E2-9F8E9574493D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{418E7478-2B7B-4F9B-B4E2-9F8E9574493D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{418E7478-2B7B-4F9B-B4E2-9F8E9574493D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913D7AC0-1958-46FB-A27B-6BE4DCFD081A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913D7AC0-1958-46FB-A27B-6BE4DCFD081A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913D7AC0-1958-46FB-A27B-6BE4DCFD081A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913D7AC0-1958-46FB-A27B-6BE4DCFD081A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,5 +48,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{85A82EFF-4721-4641-98FF-EBE2D9F663D9} = {06DFC6FD-BF12-479D-9635-44D2E339163B}
 		{418E7478-2B7B-4F9B-B4E2-9F8E9574493D} = {06DFC6FD-BF12-479D-9635-44D2E339163B}
+		{913D7AC0-1958-46FB-A27B-6BE4DCFD081A} = {6A14D6A8-73DB-4C48-81EC-E9B6E381EBBD}
 	EndGlobalSection
 EndGlobal
