@@ -1,9 +1,9 @@
 namespace FoodOrderSystem.Data.Migrations
 {
     using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using FoodOrderSystem.Data;
 
     internal sealed class Configuration : DbMigrationsConfiguration<FoodOrderSystem.Data.FoodOrderSystemDbContext>
     {
@@ -14,7 +14,7 @@ namespace FoodOrderSystem.Data.Migrations
             this.AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(FoodOrderSystem.Data.FoodOrderSystemDbContext context)
+        protected override void Seed(FoodOrderSystemDbContext context)
         {
         }
     }

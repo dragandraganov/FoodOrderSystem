@@ -244,6 +244,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\FoodOrderSystem.Data.Contracts\FoodOrderSystem.Data.Contracts.csproj">
+      <Project>{43e89eb5-9c9d-4527-b6ba-4209ace61c8d}</Project>
+      <Name>FoodOrderSystem.Data.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\FoodOrderSystem.Data.Models\FoodOrderSystem.Data.Models.csproj">
       <Project>{418e7478-2b7b-4f9b-b4e2-9f8e9574493d}</Project>
       <Name>FoodOrderSystem.Data.Models</Name>
