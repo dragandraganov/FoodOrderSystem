@@ -9,7 +9,7 @@
     {
         public Order()
         {
-            this.Dishes = new HashSet<Dish>();
+            this.Dishes = new HashSet<Meal>();
         }
 
         [Key]
@@ -23,7 +23,7 @@
 
         public virtual Eatery Eatery { get; set; }
 
-        public virtual ICollection<Dish> Dishes { get; set; }
+        public virtual ICollection<Meal> Dishes { get; set; }
 
         public decimal? Total { get; set; }
 

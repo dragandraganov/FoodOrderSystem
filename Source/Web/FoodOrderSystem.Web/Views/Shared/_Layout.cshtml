@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Начало", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Да Хапнем Лого", "Index", "Home", new { area = string.Empty }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -27,13 +27,37 @@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
+            <div class="row">
+                <div class="menu-navs">
+                    <div class="col-xs-4 text-center navbar-brand">
+                        <a href="#" class="menu-anchor">
+                            <img class="menu-image" src="~/Content/Images/city.jpg" />
+                            <span>Градове</span>
+                        </a>
+                        @*<img class="img-responsive" src="~/Content/Images/city.jpg"/>
+                @Html.ActionLink("Градове", "Index", "Home", new { area = string.Empty }, new { @class = "navbar-brand" })*@
+                    </div>
+                    <div class="col-xs-4 text-center navbar-brand">
+                        <a href="#" class="menu-anchor">
+                            <img class="menu-image" src="~/Content/Images/eatery.jpg" />
+                            <span>Заведения</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 text-center navbar-brand">
+                        <a href="#" class="menu-anchor">
+                            <img class="menu-image" src="~/Content/Images/meal.jpg" />
+                            <span>Ястия</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>Copyright &copy; @DateTime.Now.Year - Да Хапнем</p>
+            <p>Copyright &copy; @DateTime.Now.Year - Dragan Draganov</p>
         </footer>
     </div>
 

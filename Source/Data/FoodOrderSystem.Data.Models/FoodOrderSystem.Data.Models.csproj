@@ -53,9 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EateryCategory.cs" />
-    <Compile Include="Dish.cs" />
+    <Compile Include="Meal.cs" />
     <Compile Include="Eatery.cs" />
-    <Compile Include="DishCategory.cs" />
+    <Compile Include="MealCategory.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

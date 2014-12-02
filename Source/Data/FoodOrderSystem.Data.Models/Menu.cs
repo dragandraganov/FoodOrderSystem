@@ -9,7 +9,7 @@ namespace FoodOrderSystem.Data.Models
     {
         public Menu()
         {
-            this.DishCategories = new HashSet<DishCategory>();
+            this.DishCategories = new HashSet<MealCategory>();
         }
 
         [Key]
@@ -19,7 +19,7 @@ namespace FoodOrderSystem.Data.Models
 
         public virtual Eatery Eatery { get; set; }
 
-        public virtual ICollection<DishCategory> DishCategories { get; set; }
+        public virtual ICollection<MealCategory> DishCategories { get; set; }
 
         public DateTime CreatedOn { get; set; }
 

@@ -5,11 +5,11 @@ namespace FoodOrderSystem.Data.Models
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    public class DishCategory : IAuditInfo,IDeletableEntity
+    public class Meal : IAuditInfo, IDeletableEntity
     {
-        public DishCategory()
+        public Meal()
         {
-            this.Dishes = new HashSet<Dish>();
+            this.Menus = new HashSet<Menu>();
         }
 
         [Key]
@@ -18,7 +18,9 @@ namespace FoodOrderSystem.Data.Models
         [Required]
         public string Name { get; set; }
 
-        public virtual ICollection<Dish> Dishes { get; set; }
+        public decimal? Price { get; set; }
+
+        public virtual ICollection<Menu> Menus { get; set; }
 
         public DateTime CreatedOn { get; set; }
 
