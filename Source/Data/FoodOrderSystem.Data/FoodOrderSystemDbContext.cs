@@ -21,7 +21,7 @@
             return new FoodOrderSystemDbContext();
         }
 
-        public virtual IDbSet<Category> Categories { get; set; }
+        public virtual IDbSet<EateryCategory> Categories { get; set; }
 
         public override int SaveChanges()
         {
