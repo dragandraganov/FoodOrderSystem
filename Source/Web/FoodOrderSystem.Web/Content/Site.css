@@ -23,38 +23,56 @@ textarea {
     max-width: 280px;
 }
 
-.menu-image{
-    width:40px;
-    height:30px;
+.menu-image {
+    width: 40px;
+    height: 30px;
 }
 
-.menu-anchor:hover{
-    text-decoration:none;
+.menu-anchor:hover {
+    text-decoration: none;
 }
 
-.menu-label:hover{
-    background-color:red;
+.menu-label:hover {
+    background-color: red;
 }
 
-.intro{
-    background-image:url("Images/intro-main.jpg");
-    background-repeat:no-repeat;
-    background-size:100%;
-    min-height:300px;
-    position:relative;
-    text-align:center;
+.intro {
+    background-image: url("Images/intro-main.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 300px;
+    position: relative;
+    text-align: center;
 }
 
-.intro .btn{
-    position:absolute;
-    bottom:2%;
-    right:2%;
+    .intro .btn {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+    }
+
+    .intro p {
+        font-family: Cambria;
+        color: #080605;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+.main-logo {
+    background-image: url("Images/logo-new.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 130px;
+    height: 45px;
+    text-indent: -9999px; /* hides the link text */
 }
 
-.intro p{
-    font-family:Cambria;
-    color:#080605;
-    font-weight:bold;
-    font-size:1.4em;
+.auth-nav a{
+    font-family:Britannic;
+    font-weight
+    color:#808080;
 }
 
+.menu-anchor{
+    color:#d44f14;
+}
