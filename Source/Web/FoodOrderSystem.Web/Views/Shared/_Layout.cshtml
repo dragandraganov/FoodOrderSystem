@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -18,14 +18,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="#" class="main-logo">
-                    <img src="~/Content/Images/logo-new.jpg" />
                 </a>
             </div>
             <div class="navbar-collapse collapse auth-nav">
                 <ul class="nav navbar-nav ">
-                    @*<li>@Html.ActionLink("Начало", "Index", "Home")</li>*@
-                    @*<li>@Html.ActionLink("About", "About", "Home")</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -36,8 +32,6 @@
                             <img class="menu-image" src="~/Content/Images/city.jpg" />
                             <span>Градове</span>
                         </a>
-                        @*<img class="img-responsive" src="~/Content/Images/city.jpg"/>
-                            @Html.ActionLink("Градове", "Index", "Home", new { area = string.Empty }, new { @class = "navbar-brand" })*@
                     </div>
                     <div class="col-xs-4 text-center navbar-brand">
                         <a href="#" class="menu-anchor">
@@ -56,10 +50,11 @@
         </div>
     </div>
     <div class="container body-content">
+        <hr />
         @RenderBody()
         <hr />
         <footer>
-            <p>Copyright &copy; @DateTime.Now.Year - Dragan Draganov</p>
+            <p>Powered By Dragan Draganov | e-mail: dragan.mdraganov@yahoo.com | Copyright &copy; @DateTime.Now.Year</p>
         </footer>
     </div>
 
