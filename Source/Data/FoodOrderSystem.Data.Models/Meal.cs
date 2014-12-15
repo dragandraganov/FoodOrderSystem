@@ -18,6 +18,8 @@ namespace FoodOrderSystem.Data.Models
         [Required]
         public string Name { get; set; }
 
+        public decimal? Weight { get; set; }
+
         public decimal? Price { get; set; }
 
         public virtual ICollection<Menu> Menus { get; set; }
