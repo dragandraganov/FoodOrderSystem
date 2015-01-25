@@ -1,11 +1,8 @@
 ﻿using FoodOrderSystem.Data.Contracts.Models;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodOrderSystem.Data.Contracts.Repository
 {
@@ -16,6 +13,8 @@ namespace FoodOrderSystem.Data.Contracts.Repository
             : base(context)
         {
         }
+
+        //TODO Implement workaround for DeletableEntities
 
         public override IQueryable<T> All()
         {
