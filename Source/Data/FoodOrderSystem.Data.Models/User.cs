@@ -1,6 +1,7 @@
 ﻿namespace FoodOrderSystem.Data.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Security.Claims;
     using System.Threading.Tasks;
@@ -13,6 +14,8 @@
         public User()
         {
             this.CreatedOn = DateTime.Now;
+            this.FavoriteEateries = new HashSet<Eatery>();
+            this.ReservedTables=new HashSet<Table>();
         }
 
         public DateTime CreatedOn { get; set; }
@@ -24,6 +27,10 @@
         public bool IsDeleted { get; set; }
 
         public DateTime? DeletedOn {get;set;}
+
+        public virtual ICollection<Eatery> FavoriteEateries { get; set; }
+
+        public virtual ICollection<Table> ReservedTables { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User> manager)
         {

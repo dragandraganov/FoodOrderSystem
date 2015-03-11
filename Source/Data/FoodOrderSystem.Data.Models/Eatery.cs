@@ -1,11 +1,18 @@
 ﻿namespace FoodOrderSystem.Data.Models
 {
     using System;
+    using System.Collections.Generic;
     using FoodOrderSystem.Data.Contracts.Models;
     using System.ComponentModel.DataAnnotations;
 
     public class Eatery : IAuditInfo, IDeletableEntity
     {
+        public Eatery()
+        {
+            this.FavoritedByUsers = new HashSet<User>();
+            this.Tables = new HashSet<Table>();
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -50,5 +57,9 @@
         public bool IsDeleted { get; set; }
 
         public DateTime? DeletedOn { get; set; }
+
+        public virtual ICollection<User> FavoritedByUsers { get; set; }
+
+        public virtual ICollection<Table> Tables { get; set; }
     }
 }
